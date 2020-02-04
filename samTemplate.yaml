@@ -5,9 +5,9 @@ Resources:
   CDDemoLambda:
     Type: 'AWS::Serverless::Function'
     Properties:
-      Handler: lambda_function.lambda_handler
+      Handler: LambdaCode/lambda_function.lambda_handler
       Runtime: python3.6
-      CodeUri: ./LambdaCode
+      CodeUri: .
       Description: 'Lambda function for CD Demo'
       MemorySize: 128
       Timeout: 30
